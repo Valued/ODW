@@ -5,7 +5,7 @@ discs = Array.new(height){ rand(size) + 1 }
 
 print well, "\n", discs, "\n"
 
-1.upto(depth-1) { |i| well[i] = well[i-1] if well[i] > well[i-1] }
+1.upto(depth-1) { |index| well[index] = well[index-1] if well[index] > well[index-1] }
 
 #print well, "\n", discs, "\n"
 
