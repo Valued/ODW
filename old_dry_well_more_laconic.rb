@@ -9,8 +9,8 @@ print well, "\n", discs, "\n"
 
 #print well, "\n", discs, "\n"
 
-w, d, quantity = -1, 0, 0 
-depth.times { (d += 1; quantity += 1) if (d <= height-1) && (discs[d] <= well[w]); w -= 1 }
+well_index, discs_index, quantity = -1, 0, 0 
+depth.times { (discs_index += 1; quantity += 1) if (discs_index <= height-1) && (discs[discs_index] <= well[well_index]); well_index -= 1 }
 
 print discs.slice(0, quantity), "\n"
 puts quantity
